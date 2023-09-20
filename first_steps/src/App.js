@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Event from './EventComponent';
+import FirstComponent from './FirstComponent'
+import SecondComponent from './SecondComponent';
+import ThirdComponent from './ThirdComponent';
 
 function App() {
+
+  var turu = {
+    age: 18,
+    height: 183
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+
+        <FirstComponent/>
+
+        <SecondComponent/>
+
+        <ThirdComponent name="max" tututu = {turu}/>
+
+        <Event/>
+    
       </header>
+
+      
     </div>
   );
 }
